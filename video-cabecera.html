@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video cabecera</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #8DA396;
+    }
+    
+    main, footer {
+      height: 100vh;
+      position: relative;
+    }
+
+    #titulo-cabecera-container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #titulo-cabecera {
+      color: #fff;
+      font-size: 2em;
+      z-index: 1;
+      margin: 0 auto;
+      max-width: 60%;
+    }
+
+    video-contanier {
+      position: relative;
+    }
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    main {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="titulo-cabecera-container">
+      <div id="titulo-cabecera">
+        <h1>Esto es una cabecera con video</h1>
+        <p>Esto es un texto descriptivo.</p>
+      </div>
+    </div>
+    <div id="video-contanier">
+      <video src="video/lluvia.mp4" autoplay muted></video>
+    </div>
+  </header>
+  <main></main>
+  <footer></footer>
+</body>
+</html>
