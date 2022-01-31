@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video - Ejercicio 6</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #8DA396;
+    }
+    
+    main, footer {
+      height: 100vh;
+      position: relative;
+    }
+
+    #titulo-cabecera-contenedor {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #titulo-cabecera {
+      color: #fff;
+      font-size: 2em;
+      z-index: 1;
+      margin: 0 auto;
+      max-width: 60%;
+    }
+
+    .video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    main {
+      background-color: #fff;
+    }
+
+    #grid-video {
+      display: flex;
+      flex-wrap: wrap;
+    }  
+
+    .titulo-video > p {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    .video-contenedor {
+      width: 285px;
+    }
+
+    .video-contenedor > video {
+      border: 1px solid yellow;
+      box-shadow: 0px 0px 4px green;
+    }
+
+    .video-contenedor > video::-webkit-media-controls-panel {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      height: 30px;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="titulo-cabecera-contenedor">
+      <div id="titulo-cabecera">
+        <h1>Esto es una cabecera con video</h1>
+        <p>Esto es un texto descriptivo.</p>
+      </div>
+    </div>
+    <div id="video-bg-contenedor">
+      <video class="video-bg" src="video/lluvia.mp4" autoplay muted></video>
+    </div>
+  </header>
+  <main>
+    <div id="grid-video">
+      <div id="video-1" class="video-contenedor">
+        <div class="titulo-video">
+          <p>Esto es un video.</p>
+        </div>
+        <video width="275px" controls poster="img/lluvia.jpeg">
+          <source src="video/lluvia.mp4" type="video/mp4">
+          <source src="video/lluvia.ogv" type="video/ogg; codecs='theora, vorbis'">
+          <source src="videos/lluvia.webm" type="video/webm">
+        </video>
+      </div>
+      <div id="video-2" class="video-contenedor">
+        <div class="titulo-video">
+          <p>Esto es un video.</p>
+        </div>
+        <video width="275px" controls poster="img/lluvia.jpeg">
+          <source src="video/lluvia.mp4" type="video/mp4">
+          <source src="video/lluvia.ogv" type="video/ogg; codecs='theora, vorbis'">
+          <source src="videos/lluvia.webm" type="video/webm">
+        </video>
+      </div>
+      <div id="video-3" class="video-contenedor">
+        <div class="titulo-video">
+          <p>Esto es un video.</p>
+        </div>
+        <video width="275px" controls poster="img/lluvia.jpeg">
+          <source src="video/lluvia.mp4" type="video/mp4">
+          <source src="video/lluvia.ogv" type="video/ogg; codecs='theora, vorbis'">
+          <source src="videos/lluvia.webm" type="video/webm">
+        </video>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>
